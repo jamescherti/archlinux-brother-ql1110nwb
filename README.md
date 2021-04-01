@@ -2,7 +2,6 @@
 
 Github: https://github.com/jamescherti/archlinux-brother-ql1110nwb
 
-## Build the package
 ```
 $ makepkg -f
 ==> Making package: brother-ql1110nwb 2.1.4-1
