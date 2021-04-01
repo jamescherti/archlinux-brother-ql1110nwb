@@ -36,4 +36,29 @@ $ makepkg -f
 
 $ ls *.zst
 brother-ql1110nwb-2.1.4-1-x86_64.pkg.tar.zst
+
+$ sudo pacman -U brother-ql1110nwb-2.1.4-1-x86_64.pkg.tar.zst
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) brother-ql1110nwb-2.1.4-1
+
+Total Installed Size:  0.20 MiB
+Net Upgrade Size:      0.00 MiB
+
+:: Proceed with installation? [Y/n]
+(1/1) checking keys in keyring                                                                                                              [#####################################################################################] 100%
+(1/1) checking package integrity                                                                                                            [#####################################################################################] 100%
+(1/1) loading package files                                                                                                                 [#####################################################################################] 100%
+(1/1) checking for file conflicts                                                                                                           [#####################################################################################] 100%
+(1/1) checking available disk space                                                                                                         [#####################################################################################] 100%
+:: Processing package changes...
+(1/1) reinstalling brother-ql1110nwb                                                                                                        [#####################################################################################] 100%
+Restart CUPS to load the new files: systemctl restart cups
+
+You can now register your new printer using the web interface at:
+  http://localhost:631/
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
 ```
