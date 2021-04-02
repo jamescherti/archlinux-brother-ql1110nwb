@@ -1,7 +1,12 @@
-# Arch Linux package: LPR and CUPS printer driver for the Brother QL-1110NWB
+# LPR and CUPS printer driver for the Brother QL-1110NWB (Arch Linux package)
 
-Github: https://github.com/jamescherti/archlinux-brother-ql1110nwb
+Clone the repository:
+```
+$ git clone https://github.com/jamescherti/archlinux-brother-ql1110nwb
+$ cd archlinux-brother-ql1110nwb
+```
 
+Build the package with makepkg:
 ```
 $ makepkg -f
 ==> Making package: brother-ql1110nwb 2.1.4-1
@@ -33,10 +38,10 @@ $ makepkg -f
   -> Compressing package...
 ==> Leaving fakeroot environment.
 ==> Finished making: brother-ql1110nwb 2.1.4-1
+```
 
-$ ls *.zst
-brother-ql1110nwb-2.1.4-1-x86_64.pkg.tar.zst
-
+Install the package:
+```
 $ sudo pacman -U brother-ql1110nwb-2.1.4-1-x86_64.pkg.tar.zst
 loading packages...
 resolving dependencies...
