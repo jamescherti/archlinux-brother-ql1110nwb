@@ -1,5 +1,7 @@
 # LPR and CUPS printer driver for the Brother QL-1110NWB (Arch Linux package)
 
+## Instructions
+
 Clone the repository:
 ```
 $ git clone https://github.com/jamescherti/archlinux-brother-ql1110nwb
@@ -67,3 +69,7 @@ You can now register your new printer using the web interface at:
 :: Running post-transaction hooks...
 (1/1) Arming ConditionNeedsUpdate...
 ```
+
+## Links
+- AUR page: https://aur.archlinux.org/packages/brother-ql1110nwb/
+- Github page: https://github.com/jamescherti/archlinux-brother-ql1110nwb
