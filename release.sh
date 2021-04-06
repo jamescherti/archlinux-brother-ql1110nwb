@@ -34,7 +34,7 @@ main() {
   makepkg --printsrcinfo > .SRCINFO
 
   rm -fr "$release_dir"
-  git clone "ssh://aur@aur.archlinux.org/$release_dir.git"
+  git clone "ssh://aur@aur.archlinux.org/$pkgname.git" "$release_dir"
   cp .SRCINFO PKGBUILD brother-ql1110nwb.install "$release_dir/"
 
   echo
