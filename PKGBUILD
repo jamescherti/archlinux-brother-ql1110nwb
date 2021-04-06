@@ -15,7 +15,6 @@ install="$pkgname.install"
 source=("https://download.brother.com/welcome/dlfp100575/ql1110nwbpdrv-${pkgver}-0.i386.deb")
 sha256sums=('93670aa9b11a8a4090777ca61648d32d6bd6c087d2a1998a4b5ac93b0b6b4a0a')
 
-
 package() {
   tar -xf "data.tar.gz" -C "${pkgdir}"
 
