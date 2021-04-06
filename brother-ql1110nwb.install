@@ -1,5 +1,5 @@
 post_upgrade() {
-  echo "Restart CUPS to load the new files: systemctl restart cups"
+  echo "Restart CUPS to load the new files"
   echo
   echo "You can now register your new printer using the web interface at:"
   echo "  http://localhost:631/"
