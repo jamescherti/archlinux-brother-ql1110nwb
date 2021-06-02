@@ -72,4 +72,4 @@ You can now register your new printer using the web interface at:
 
 ## Links
 - AUR page: https://aur.archlinux.org/packages/brother-ql1110nwb/
-- Github page: https://github.com/jamescherti/archlinux-brother-ql1110nwb
+- GitHub repository: https://github.com/jamescherti/archlinux-brother-ql1110nwb
