@@ -19,9 +19,11 @@
 # SOFTWARE.
 #
 
-set -euf -o pipefail; IFS=$'\n\t'
+set -euf -o pipefail
+IFS=$'\n\t'
 
 if [ "$(id -u)" -eq "0" ]; then
+
   echo "Error: you cannot run this script as root." >&2
   exit 1
 fi
@@ -31,13 +33,14 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 main() {
   local pkgname="brother-ql1110nwb"
   local release_dir="release-$pkgname"
-  makepkg --printsrcinfo > .SRCINFO
+  makepkg --printsrcinfo >.SRCINFO
 
   rm -fr "$release_dir"
   git clone "ssh://aur@aur.archlinux.org/$pkgname.git" "$release_dir"
   cp .SRCINFO PKGBUILD brother-ql1110nwb.install "$release_dir/"
 
   echo
+
   echo "Success: the release directory '$release_dir' was generated successfully."
 
   exit 0
